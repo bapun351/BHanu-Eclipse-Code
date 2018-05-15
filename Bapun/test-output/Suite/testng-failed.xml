@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <groups>
+      <run>
+        <include name="ST"/>
+        <include name="RT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pac3.deleteCustomer">
+        <methods>
+          <include name="dCTest1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- pac3.deleteCustomer -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
